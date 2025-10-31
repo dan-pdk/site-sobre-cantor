@@ -12,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* background-color: hsl(0, 0%, 11%); */
 }
 
 .header-wrap {
@@ -65,7 +67,7 @@ header .nav-button a {
     text-decoration: none;
     font-weight: bold;
     font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 
     color: white;
 
@@ -83,4 +85,43 @@ header .nav-button a:hover {
 
 header .nav-button img {
     width: 25px;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+/* hero */
+
+#hero {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-bg {
+    margin-top: 100px;
+    width: 105%;
+    height: 120%;
+
+    position: absolute;
+    filter: brightness(0.29);
+    z-index: -2;
+}
+
+@font-face {
+    font-family: Bebas Neue;
+    src: url(../../assets/fonts/BebasNeue-Regular.ttf);
+}
+
+#frase-hero {
+    font-family: Bebas Neue;
+    font-size: 100px;
+    color: white;
 }
