@@ -285,8 +285,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    border: 1px solid blue;
 }
 
 #album-scroll > h1 {
@@ -300,7 +298,6 @@ main {
 }
 
 #album-scroll-container {
-    border: 1px solid red;
     width: 100%;
     height: fit-content;
     overflow: hidden;
@@ -328,9 +325,49 @@ main {
 }
 
 .album {
-    border: 1px solid red;
     flex-shrink: 0;
     
-    height: 400px;
+    padding: 50px 30px 50px 30px;
+
+    height: 100%;
     width: 300px;
+
+    background: radial-gradient(circle,rgba(48, 48, 48, 1) 0%, rgba(8, 8, 8, 1) 100%);
+
+    border: 3px solid hsl(0, 0%, 7%);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.album-img {
+    width: 75%;
+    transition: 0.3s ease-in-out;
+    cursor: help;
+
+    border: 5px solid white;
+    border-radius: 45px;
+}
+
+.album-img:hover {
+    transform: scale(1.1);
+}
+
+.album-date {
+    font-family: Bebas Neue;
+    font-size: 26px;
+}
+
+.album-name {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    width: 100%;
+
+    text-align: center;
 }

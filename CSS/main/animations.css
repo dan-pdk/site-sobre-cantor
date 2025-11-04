@@ -47,5 +47,5 @@ aqua {
     gap: 30px;
 
     will-change: transform;
-    animation: albumScroll 47s linear infinite;
+    animation: albumScroll 75s linear infinite;
 }
