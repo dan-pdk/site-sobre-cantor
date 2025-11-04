@@ -13,17 +13,25 @@ body {
     flex-direction: column;
     align-items: center;
 
-    /* background-color: hsl(0, 0%, 11%); */
+    background: url(../../assets/img/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
+
+/* header ---------------------------------------------------------------------------------------------------------- */
 
 .header-wrap {
     position: fixed;
     width: 100%;
+
+    z-index: 99;
 }
 
 header {
     height: 100px;
-    width: 101%;
+    width: 100%;
 
     background-color: black;
 
@@ -37,13 +45,12 @@ header {
 
 #logo-image {
     height: 70px;
-
-    position: absolute;
-    left: 10px;
+    align-self: center;
+    margin-left: 20px;
 }
 
 header > nav {
-    width: 60%;
+    width: 67%;
 
     display: flex;
     justify-content: center;
@@ -88,12 +95,13 @@ header .nav-button img {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-/* hero */
+/* hero ---------------------------------------------------------------------------------------------------------- */
 
 #hero {
     width: 100%;
@@ -107,12 +115,17 @@ main {
 
 #hero-bg {
     margin-top: 100px;
-    width: 105%;
-    height: 120%;
+    width: 100%;
+    height: 125%;
 
     position: absolute;
     filter: brightness(0.29);
     z-index: -2;
+}
+
+#bg-spacer {
+    height: 125%; 
+    margin-top: 100px;
 }
 
 @font-face {
@@ -124,4 +137,200 @@ main {
     font-family: Bebas Neue;
     font-size: 100px;
     color: white;
+    text-align: center;
+
+    max-width: 75%;
+
+    margin-top: 36px;
+}
+
+#frase-hero-complemento {
+    color: white;
+    
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#hero-buttons {
+    margin-top: 90px;
+
+    width: 50%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-button {
+    transition: 0.2s ease-in-out;
+
+    padding: 15px 30px 15px 30px;
+    
+    text-decoration: none;
+    font-family: Bebas Neue;
+    color: white;
+    font-size: larger;
+
+    border-radius: 12px;
+}
+
+#hero-buttons > #albuns {
+    background-color: hsl(0, 100%, 64%);
+}
+
+#hero-buttons > #albuns:hover {
+    box-shadow: 0 0 8px 2px hsl(4, 63%, 40%);
+}
+
+#hero-buttons > #videos {
+    background-color: hsl(234, 100%, 64%);
+}
+
+#hero-buttons > #videos:hover {
+    box-shadow: 0 0 8px 2px hsl(234, 71%, 51%);
+}
+
+#hero-buttons > #sucessos {
+    background-color: hsl(115, 58%, 35%);
+}
+
+#hero-buttons > #sucessos:hover {
+    box-shadow: 0 0 8px 2px hsl(115, 57%, 25%);
+}
+
+.hero-button:hover {
+    transform: scale(1.05);
+}
+
+/* biografia rápida ------------------------------------------------------------------------------------------------*/
+
+#quick-bio {
+    width: 100vw;
+    min-height: 350px;
+    max-height: 350px;
+
+    background: linear-gradient(0deg,rgba(46, 46, 46, 1) 0%, rgba(8, 8, 8, 1) 100%);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quick-bio-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    width: 55%;
+
+    margin-left: 60px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#quick-bio-text-wrapper > h1 {
+    font-family: Bebas Neue !important;
+    font-size: 60px;
+}
+
+#quick-bio-img {
+    height: 300px;
+    margin-right: 110px;
+
+    filter: contrast(0.9);
+
+    border: 4px solid hsl(0, 0%, 11%);
+    border-radius: 10px;
+}
+
+#quick-bio-text-trophies {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+}
+
+.trophy {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: hsl(0, 0%, 10%);
+
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.trophy > img {
+    width: 70px;
+    user-select: none;
+}
+
+.trophy > span {
+    font-size: 19px;
+    font-family: Bebas Neue;
+}
+
+/* scroll de álbuns -------------------------------------------------------------------------------------------------*/
+
+#album-scroll {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid blue;
+}
+
+#album-scroll > h1 {
+    font-family: Bebas Neue;
+    color: white;
+    font-size: 40px;
+
+    padding: 10px;
+
+    margin-bottom: 50px;
+}
+
+#album-scroll-container {
+    border: 1px solid red;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+
+    color: white;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+#album-track {
+    display: flex;
+    align-items: center;
+
+    height: fit-content;
+    width: max-content;
+
+    border: 1px solid ghostwhite;
+
+    gap: 30px;
+}
+
+.album {
+    border: 1px solid red;
+    flex-shrink: 0;
+    
+    height: 400px;
+    width: 300px;
 }

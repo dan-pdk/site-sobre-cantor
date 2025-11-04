@@ -1,0 +1,51 @@
+@keyframes riseUpLoad {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes diskRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes albumScroll {
+    from {transform: translateX(0);}
+    to {transform: translateX(-50%);}
+}
+
+red {
+    color: red;
+}
+
+gold {
+    color: gold;
+}
+
+aqua {
+    color: aqua;
+}
+
+#frase-hero {
+    animation: riseUpLoad forwards 0.75s ease-out;
+}
+
+#frase-hero-complemento {
+    animation: riseUpLoad forwards 0.5s ease-out;
+    animation-delay: 30ms;
+}
+
+.trophy > img {
+    animation: diskRotate infinite 5s linear;
+}
+
+#album-track {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: max-content;
+
+    gap: 30px;
+
+    will-change: transform;
+    animation: albumScroll 47s linear infinite;
+}
