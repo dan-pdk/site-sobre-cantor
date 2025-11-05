@@ -9,124 +9,86 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E. S.</title>
-    <link
-      rel="shortcut icon"
-      href="assets/img/window-image.png"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="CSS/main/style.css" />
-    <link rel="stylesheet" href="CSS/main/animations.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E. S.</title>
+  <link rel="shortcut icon" href="assets/img/window-image.png" type="image/x-icon" />
 
-  <body>
-    <div class="header-wrap">
-      <header>
-        <img id="logo-image" src="assets/img/logo.png" alt="logo" />
-        <nav>
-          <div class="nav-button">
-            <a href="#">
-              <img src="assets/img/nav-img-successes.svg" alt="" />
-              <p>Sucessos</p>
-            </a>
-          </div>
-          <div class="nav-button">
-            <a href="#">
-              <img src="assets/img/nav-img-music.svg" alt="" />
-              <p>Músicas</p>
-            </a>
-          </div>
-          <div class="nav-button">
-            <a href="#">
-              <img src="assets/img/nav-img-video.svg" alt="" />
-              <p>Vídeos</p>
-            </a>
-          </div>
-          <div class="nav-button">
-            <a href="#">
-              <img src="assets/img/nav-img-photo.svg" alt="" />
-              <p>Fotos</p>
-            </a>
-          </div>
-          <div class="nav-button">
-            <a href="#">
-              <img src="assets/img/nav-img-history.svg" alt="" />
-              <p>História</p>
-            </a>
-          </div>
-          <div class="nav-button">
-            <a href="#">
-              <img src="assets/img/nav-img-contact.svg" alt="" />
-              <p>Contato</p>
-            </a>
-          </div>
-        </nav>
-      </header>
-    </div>
+  <link rel="stylesheet" href="CSS/main/style.css" />
+  <link rel="stylesheet" href="CSS/main/animations.css" />
+</head>
 
-    <main>
-      <section id="hero">
-        <img src="assets/img/hero-bg-alt.png" id="hero-bg" />
-        <p id="frase-hero"></p>
-        <p id="frase-hero-complemento">- Elymar Santos</p>
-        <nav id="hero-buttons">
-          <a href="#album-container" class="hero-button" id="albuns">Álbuns</a
-          ><a href="" class="hero-button" id="videos">Vídeos</a
-          ><a href="" class="hero-button" id="sucessos">Sucessos</a>
-        </nav>
-      </section>
+<body>
+  <div class="header-wrap">
+    <header>
+      <img id="logo-image" src="assets/img/logo.png" alt="logo">
+      <nav>
+        <button><img src="assets/img/menu-icon.svg" alt="☰"></button>
+      </nav>
+    </header>
+  </div>
 
-      <div id="bg-spacer"></div>
+  <main>
+    <section id="hero">
+      <img src="assets/img/hero-bg-alt.png" id="hero-bg">
+      <p id="frase-hero"></p>
+      <p id="frase-hero-complemento">- Elymar Santos</p>
+      <nav id="hero-buttons">
+        <a href="#album-scroll" class="hero-button" id="albuns">Álbuns</a><a href="" class="hero-button"
+          id="videos">Vídeos</a><a href="" class="hero-button" id="sucessos">Sucessos</a>
+      </nav>
+    </section>
 
-      <section id="quick-bio">
-        <div id="quick-bio-text">
-          <div id="quick-bio-text-wrapper">
-            <h1>Conheça Elymar Santos</h1>
-            <p>
-              Elimar, cantor de MPB e brasileiro de corpo e alma, nasceu no
-              Morro do Alemão (RJ), em 11 de outubro de 1952. Começou sua
-              carreira profissional como ator de novela, mas na década de 90
-              aproximou-se de Rosinha Garotinho, que foi a porta de entrada pra
-              sua fama nacional. Tem uma carreira de 36 anos, 40 discos e 7 DVDs
-              gravados e é um dos cantores mais amados de MPB do Brasil, com um
-              legado de invejar as maiores lendas.
-            </p>
+    <div id="bg-spacer"></div>
+
+    <section id="quick-bio">
+      <div id="quick-bio-text">
+        <div id="quick-bio-text-wrapper">
+          <h1>Conheça Elymar Santos</h1>
+          <p>
+            Elimar, cantor de MPB e brasileiro de corpo e alma, nasceu no
+            Morro do Alemão (RJ), em 11 de outubro de 1952. Começou sua
+            carreira profissional como ator de novela, mas na década de 90
+            aproximou-se de Rosinha Garotinho, que foi a porta de entrada pra
+            sua fama nacional. Tem uma carreira de 36 anos, 40 discos e 7 DVDs
+            gravados e é um dos cantores mais amados de MPB do Brasil, com um
+            legado de invejar as maiores lendas.
+          </p>
+        </div>
+        <div id="quick-bio-text-trophies">
+          <div class="trophy">
+            <img src="assets/img/disco.png" alt="Disco de Ouro" />
+            <span>12 discos de <gold>ouro</gold></span>
           </div>
-          <div id="quick-bio-text-trophies">
-            <div class="trophy">
-              <img src="assets/img/disco.png" alt="Disco de Ouro" />
-              <span>12 discos de <gold>ouro</gold></span>
-            </div>
-            <div class="trophy">
-              <img src="assets/img/disco-diamante.png" alt="Disco de Platina" />
-              <span>um disco de <aqua>Diamante</aqua></span>
-            </div>
-            <div class="trophy">
-              <img src="assets/img/disco-platina.png" alt="Disco de Diamante" />
-              <span>um disco de platina</span>
-            </div>
+          <div class="trophy">
+            <img src="assets/img/disco-diamante.png" alt="Disco de Platina" />
+            <span>um disco de <aqua>Diamante</aqua></span>
+          </div>
+          <div class="trophy">
+            <img src="assets/img/disco-platina.png" alt="Disco de Diamante" />
+            <span>um disco de platina</span>
           </div>
         </div>
-        <img
-          src="assets/img/elymar-santos-1.png"
-          alt="Retrato do Elymar Santos"
-          id="quick-bio-img"
-        />
-      </section>
+      </div>
+      <img src="assets/img/elymar-santos-1.png" alt="Retrato do Elymar Santos" id="quick-bio-img" />
+    </section>
 
-      <section id="album-scroll">
-        <h1>Álbuns</h1>
-        <div id="album-scroll-container">
-          <div id="album-track">
-            
-          </div>
-        </div>
-      </section>
-    </main>
-    <script src="JS/main/main.js"></script>
-  </body>
+    <section id="album-scroll">
+      <h1>
+        Álbuns
+        <h5>
+          Lista dos Álbuns mais famosos de Elymar Santos. <br />
+          Clique em um álbum para vê-lo.
+        </h5>
+      </h1>
+      <div id="album-scroll-container">
+        <div id="album-track"></div>
+      </div>
+    </section>
+  </main>
+  <script src="JS/main/main.js"></script>
+</body>
+
 </html>
