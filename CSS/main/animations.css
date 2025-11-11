@@ -13,6 +13,11 @@
     to {transform: translateX(-50%);}
 }
 
+.hide {
+    display: none !important;
+    pointer-events: none;
+}
+
 red {
     color: red;
 }

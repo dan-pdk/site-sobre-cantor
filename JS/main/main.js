@@ -3,6 +3,10 @@ function hide(e) { return e.classList.add('hide'); }
 function show(e) { return e.classList.remove('hide'); }
 function addClass(c) { return c.classList.add(c); }
 function removeClass(c) { return c.classList.remove(c); }
+//this?
+function toggleHide() {
+    return this.classList.toggle('hide');
+}
 
 // header
 const header = document.querySelector('header');
@@ -118,3 +122,21 @@ function setupScrolling() {
 addAllAlbums();
 addAllAlbums();
 setupScrolling();
+
+// menuzinho do header
+
+function navButtonSetup() {
+    const button = document.querySelector('nav > button');
+    const img = button.querySelector('img');
+    const content = document.querySelector('#nav-content');
+
+    button.addEventListener('click', () => {
+        if (content.classList.contains('hide')) {
+            img.src = `assets/img/menu-close.svg`;
+        } else {
+            img.src = `assets/img/menu-icon.svg`;
+        }
+        content.classList.toggle('hide');
+    })
+}
+navButtonSetup();
