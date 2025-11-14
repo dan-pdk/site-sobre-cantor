@@ -118,3 +118,4 @@ function setupScrolling() {
 addAllAlbums();
 addAllAlbums();
 setupScrolling();
+
