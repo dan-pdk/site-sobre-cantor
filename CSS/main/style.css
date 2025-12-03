@@ -1,3 +1,8 @@
+:root {
+    --default-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --alt-font: Bebas Neue;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -97,7 +102,7 @@ header > nav > button:hover {
     transition: 0.15s;
     
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--default-font);
     text-decoration: none;
 }
 
@@ -180,7 +185,7 @@ main {
 
     font-weight: bold;
     font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--default-font);
 }
 
 #hero-buttons {
@@ -251,7 +256,7 @@ main {
 }
 
 #quick-bio-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--default-font);
 
     width: 55%;
 
@@ -328,7 +333,7 @@ main {
 }
 
 #album-scroll h5 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--default-font);
     color: white;
     text-align: center;
     font-style: italic;
@@ -403,7 +408,7 @@ main {
 
 .album-name {
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--default-font);
     
     width: 100%;
 
