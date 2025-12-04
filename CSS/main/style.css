@@ -388,6 +388,13 @@ main {
 
     cursor: pointer;
     transition: 0.12s ease-in-out;
+
+    color: white;
+    text-decoration: none;
+}
+
+#album-track a {
+    text-decoration: none;
 }
 
 .album:hover {
@@ -413,4 +420,285 @@ main {
     width: 100%;
 
     text-align: center;
+}
+
+/* album search  */
+
+#all-albums {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(0deg,rgb(39, 39, 39) 0%, rgb(20, 20, 20) 100%);
+
+    padding: 20px 0 20px 0;
+
+    font-family: var(--alt-font);
+    color: white;
+}
+
+#all-albums a {
+    color: white;
+    text-decoration: none;
+}
+
+#album-search-wrapper {
+    width: 30%;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+}
+
+#search {
+    border: none;
+    padding: 0 0 0 10px;
+    height: 100%;
+    outline: none;
+
+    border-radius: 360px 0 0 360px;
+}
+
+#search-button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0 360px 360px 0;
+
+    cursor: pointer;
+}
+
+#search-button > img {
+    width: 85%;
+    height: 85%;
+}
+
+#album-list {
+    width: 78%;
+    height: 75vh;
+
+    margin-top: 20px;
+
+    background: radial-gradient(circle,rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 15px 10px 15px 10px;
+    border-radius: 15px;
+}
+
+.album-display {
+    width: 200px;
+    padding: 15px;
+
+    background: radial-gradient(circle,rgba(48, 48, 48, 1) 0%, rgba(8, 8, 8, 1) 100%);
+    border: 3px solid hsl(0, 0%, 7%);
+    border-radius: 8px;
+
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    cursor: pointer;
+    transition: 0.12s ease-in-out;
+}
+
+.album-display:hover {
+    background: radial-gradient(circle,rgb(65, 65, 65) 0%, rgb(32, 32, 32) 100%);
+}
+
+.album-display-img {
+    width: 80%;
+    border: 4px solid white;
+    border-radius: 30px;
+}
+
+.album-display-name {
+    font-family: var(--default-font);
+    text-align: center;
+}
+
+.album-display-year {
+    font-family: Bebas Neue;
+    font-size: 22px;
+}
+
+/* ----------- esqueci. sucessos ---------------------------------------------------------- */
+
+#sucesses {
+    width: 100%;
+    height: 40vw;
+
+    background: url(../../assets/img/sucessos-bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 50px;
+
+    backdrop-filter: brightness(0.5);
+}
+
+#sucesses > h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Bebas Neue;
+    margin-top: 20px;
+}
+
+#sucesses > div {
+    width: 85%;
+    height: 75%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sucesso {
+    width: 100%;
+    height: 100px;
+    position: relative;
+
+    color: white;
+
+    background: linear-gradient(90deg,rgba(71, 71, 71, 1) 0%, rgba(31, 31, 31, 1) 100%);
+
+    border: 4px solid rgb(54, 54, 54);
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: 0.25s ease-out;
+}
+
+.sucesso:hover {
+    transform: scale(1.05);
+}
+
+.sucesso > .spinning-disc {
+    animation: diskRotate infinite 5s linear;
+
+    height: 80%;
+
+    position: absolute;
+    left: 5px;
+    top: calc(10%);
+}
+
+.sucesso > h1 {
+    text-align: center;
+    font-family: var(--alt-font);
+    position: absolute;
+    top: 10px;
+    left: 85px;
+
+    text-align: center;
+}
+
+#sucesses > h1 > i {
+    font-size: small;
+    font-family: var(--default-font);
+    height: 15px;
+    vertical-align: top;
+}
+
+.sucesso > span {
+    font-family: var(--default-font);
+    color: white;
+    
+    position: absolute;
+    top: 40px;
+    left: 87px;
+}
+
+.sucesso > .headfoneswow {
+    height: 60%;
+
+    position: absolute;
+    top: calc(20%);
+    right: 10px;
+}
+
+/* footer */
+
+footer { 
+    width: 100%;
+    height: 150px;
+
+    background-color: black;
+
+    padding: 30px;
+
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#copyright { 
+    height: 100%;
+    width: 70%;
+    
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--default-font);
+
+    text-align: left;
+
+    margin-left: 30px;
+}
+
+#footer-info {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    font-family: var(--default-font);
+}
+
+#footer-info span {
+    font-size: larger;
+
+    font-family: var(--alt-font);
+}
+
+#footer-info a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+}
+
+#footer-info a:hover {
+    text-decoration: underline;
+}
+
+#footer-info > * {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
 }
